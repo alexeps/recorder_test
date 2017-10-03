@@ -14,6 +14,9 @@
 		B0DB59751F838B5500CAE5A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DB59731F838B5500CAE5A0 /* LaunchScreen.storyboard */; };
 		B0DB59801F838B5500CAE5A0 /* audio_recorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB597F1F838B5500CAE5A0 /* audio_recorderTests.swift */; };
 		B0DB598B1F838B5500CAE5A0 /* audio_recorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB598A1F838B5500CAE5A0 /* audio_recorderUITests.swift */; };
+		B0DB599A1F838C9700CAE5A0 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB59991F838C9700CAE5A0 /* AudioRecorder.swift */; };
+		B0DB599C1F838E8900CAE5A0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB599B1F838E8900CAE5A0 /* AudioPlayer.swift */; };
+		B0DB599E1F83BCF800CAE5A0 /* AudioCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB599D1F83BCF800CAE5A0 /* AudioCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B0DB59861F838B5500CAE5A0 /* audio_recorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audio_recorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DB598A1F838B5500CAE5A0 /* audio_recorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio_recorderUITests.swift; sourceTree = "<group>"; };
 		B0DB598C1F838B5500CAE5A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0DB59991F838C9700CAE5A0 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		B0DB599B1F838E8900CAE5A0 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		B0DB599D1F83BCF800CAE5A0 /* AudioCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		B0DB59691F838B5500CAE5A0 /* audio_recorder */ = {
 			isa = PBXGroup;
 			children = (
+				B0DB59981F838C0F00CAE5A0 /* Core */,
 				B0DB596A1F838B5500CAE5A0 /* AppDelegate.swift */,
 				B0DB596C1F838B5500CAE5A0 /* ViewController.swift */,
 				B0DB596E1F838B5500CAE5A0 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				B0DB598C1F838B5500CAE5A0 /* Info.plist */,
 			);
 			path = audio_recorderUITests;
+			sourceTree = "<group>";
+		};
+		B0DB59981F838C0F00CAE5A0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B0DB59991F838C9700CAE5A0 /* AudioRecorder.swift */,
+				B0DB599B1F838E8900CAE5A0 /* AudioPlayer.swift */,
+				B0DB599D1F83BCF800CAE5A0 /* AudioCore.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DB599A1F838C9700CAE5A0 /* AudioRecorder.swift in Sources */,
 				B0DB596D1F838B5500CAE5A0 /* ViewController.swift in Sources */,
+				B0DB599E1F83BCF800CAE5A0 /* AudioCore.swift in Sources */,
 				B0DB596B1F838B5500CAE5A0 /* AppDelegate.swift in Sources */,
+				B0DB599C1F838E8900CAE5A0 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
